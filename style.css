@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,500;1,300&family=Kanit:ital,wght@0,100;0,200;0,400;0,600;1,100&display=swap');
+/*card colors
+#f05067- pinkish
+#fff- white 
+
+text color
+#fff-white
+#333-black
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/event1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 30px;
+}
+#container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+#container h2{
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+    z-index: 50;
+    color: #fff;
+}
+.wrapstyle{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 40px 50px;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: auto;
+}
+.events,.events2{
+    flex-basis: 300px;
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: #f05067;
+    color: #fff;
+    border-radius: 5px;
+}
+/* cards */
+.events2{
+    background-color: #FFFFF0;
+    color: #333;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    
+}
+.card .header i{
+    font-size: 25px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.events .card .header i:hover{
+    background-color: #FFFFF0;
+    color: #f05067;
+}
+.events2 .card .header i:hover{
+    background-color: #f05067;
+    color: #FFFFF0;
+}
+
+.card .content{
+    width: 100%;
+    margin-left: 10px;
+    border-left: 2px dashed #fff;
+    padding: 0px 20px;
+}
+.content small{
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 400;
+    border-bottom: 2px dashed #fff;
+}
+/* cards */
+.events2 .content{
+    border-left: 2px dashed #333;
+}
+.events2 .content small{
+    border-bottom: 2px dashed #333;
+}
+.content h3{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.content p{
+    font-size: 20px; 
+}
+
+/* data-form */
+#data{
+    width: 75%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top:50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    padding: 30px 50px;
+    z-index: 50;
+}
+
+.data-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data-header h1{
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.data-header i{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    color:#fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#form{
+    width: 80%;
+    background-color: #fff;
+    padding: 50px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 3px;
+}
+.form-control{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.form-control label{
+    font-size: 24px;
+    font-weight: 400px;
+    letter-spacing: 1px;
+}
+.form-control input{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.middle-form{
+    width: 250px;
+    height: 250px;
+    border: none;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+}
+.middle-form i{
+    color: #fff;
+    font-size: 100px;
+    cursor: pointer;
+}
+.middle-form i::after{
+    content: "Add Event";
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.bottom-form{
+    border: none;
+    background: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 50;
+}
+.bottom-form i{
+    color: #f05067;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 80px;
+    cursor: pointer;
+}

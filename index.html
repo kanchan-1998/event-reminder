@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="container">
+        <h2>EVENTS</h2>
+        <div id="wrapper">
+        </div>
+        <button id="show-form"><i class="fa-solid fa-circle-plus"></i></button>
+    <!-- form data -->
+        <div id="data">
+            <div class="data-header">
+                <h1>Fill your event</h1>
+                <i id="close-form" class="fa-solid fa-xmark"></i>
+            </div>
+            <form id="form">
+                <div class="form-control">
+                    <label>Date</label>
+                    <input type="date" id="date" >
+                </div>
+                <div class="form-control">
+                    <label>Event Title</label>
+                    <input type="text" id="title" placeholder="Enter the title">
+                </div>
+                <div class="form-control">
+                    <label>Event Venue</label>
+                    <input type="text" id="venue" placeholder="Enter the venue">
+                </div>
+                <div class="form-control">
+                    <label>Event Time</label>
+                    <input type="time" id="time">
+                </div>
+                <div class="form-control">
+                    <input type="submit" id="submit" value="Done" onclick="addEvents()">
+                </div>        
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
